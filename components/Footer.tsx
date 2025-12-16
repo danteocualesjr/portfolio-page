@@ -1,17 +1,17 @@
 export default function Footer() {
   return (
-    <footer className="py-12 md:py-16 px-6 border-t border-gray-200">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-lg md:text-xl text-gray-600 mb-6 font-light">
+    <footer className="py-16 md:py-24 px-8 md:px-12 lg:px-16 xl:px-24 border-t border-black">
+      <div className="max-w-6xl">
+        <p className="text-xl md:text-2xl text-black mb-8">
           Looking forward to it,
         </p>
-        <p className="text-base md:text-lg text-gray-500 mb-8">
-          © Your Name 👋
+        <p className="text-lg md:text-xl text-black mb-12">
+          © Your Name👋
         </p>
         <div className="flex flex-wrap gap-6 md:gap-8">
           <a 
             href="mailto:your.email@example.com" 
-            className="text-base md:text-lg font-medium text-black hover:underline transition-opacity hover:opacity-70"
+            className="text-lg md:text-xl text-black underline hover:no-underline"
           >
             Email
           </a>
@@ -19,7 +19,7 @@ export default function Footer() {
             href="https://linkedin.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-base md:text-lg font-medium text-black hover:underline transition-opacity hover:opacity-70"
+            className="text-lg md:text-xl text-black underline hover:no-underline"
           >
             LinkedIn
           </a>
@@ -27,7 +27,7 @@ export default function Footer() {
             href="https://instagram.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-base md:text-lg font-medium text-black hover:underline transition-opacity hover:opacity-70"
+            className="text-lg md:text-xl text-black underline hover:no-underline"
           >
             Instagram
           </a>
@@ -35,7 +35,7 @@ export default function Footer() {
             href="https://x.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-base md:text-lg font-medium text-black hover:underline transition-opacity hover:opacity-70"
+            className="text-lg md:text-xl text-black underline hover:no-underline"
           >
             X
           </a>
@@ -44,4 +44,3 @@ export default function Footer() {
     </footer>
   );
 }
-

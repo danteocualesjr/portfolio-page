@@ -1,44 +1,11 @@
 export default function Contact() {
   return (
-    <section className="py-16 md:py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-600 font-light mb-8 md:mb-12">
-          Culturally, I fit high-energy teams. If this sounds like you, I'd love to connect. Find me on LinkedIn, Instagram, X or shoot me an email.
+    <section className="py-20 md:py-32 px-8 md:px-12 lg:px-16 xl:px-24">
+      <div className="max-w-6xl">
+        <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed text-black mb-12">
+          Culturally, I fit high-energy teams. If this sounds like you, I'd love to connect. Find me on <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">LinkedIn</a>, <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">Instagram</a>, <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">X</a> or shoot me an <a href="mailto:your.email@example.com" className="underline hover:no-underline">email</a>.
         </p>
-        <div className="flex flex-wrap gap-6 md:gap-8">
-          <a 
-            href="mailto:your.email@example.com" 
-            className="text-lg md:text-xl font-medium text-black hover:underline transition-opacity hover:opacity-70"
-          >
-            Email
-          </a>
-          <a 
-            href="https://linkedin.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-lg md:text-xl font-medium text-black hover:underline transition-opacity hover:opacity-70"
-          >
-            LinkedIn
-          </a>
-          <a 
-            href="https://instagram.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-lg md:text-xl font-medium text-black hover:underline transition-opacity hover:opacity-70"
-          >
-            Instagram
-          </a>
-          <a 
-            href="https://x.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-lg md:text-xl font-medium text-black hover:underline transition-opacity hover:opacity-70"
-          >
-            X
-          </a>
-        </div>
       </div>
     </section>
   );
 }
-

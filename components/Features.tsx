@@ -3,14 +3,14 @@ export default function Features() {
     {
       title: "Value",
       description: "Experience, big energy and fresh thinking.",
-      testimonial: "It's very rare in life when you meet someone that is so decisively exceptional at what they do.",
-      author: "Jordan Nott, Founder"
+      author: "Jordan Nott, Founder",
+      testimonial: "It's very rare in life when you meet someone that is so decisively exceptional at what they do."
     },
     {
       title: "Insights",
       description: "Bridge the gap between creative and commercial objectives — speaking both languages.",
-      testimonial: "From a creative perspective, I've never worked with a more talented individual.",
-      author: "Peter Hwang, Founder"
+      author: "Peter Hwang, Founder",
+      testimonial: "From a creative perspective, I've never worked with a more talented individual."
     },
     {
       title: "Growth",
@@ -23,29 +23,29 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-16 md:mb-20">
+    <section className="py-20 md:py-32 px-8 md:px-12 lg:px-16 xl:px-24">
+      <div className="max-w-6xl">
+        <h2 className="text-6xl md:text-8xl lg:text-9xl xl:text-[12rem] font-bold leading-[0.95] text-black tracking-[-0.02em] mb-20 md:mb-32">
           Here's what you can expect from me...
         </h2>
-        <div className="space-y-20 md:space-y-24">
+        <div className="space-y-24 md:space-y-32">
           {features.map((feature, index) => (
-            <div key={index}>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4 md:mb-6">
+            <div key={index} className="space-y-8 md:space-y-12">
+              <h3 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-tight">
                 {feature.title}
               </h3>
-              <p className="text-lg md:text-xl lg:text-2xl text-gray-600 font-light mb-6">
+              <h4 className="text-2xl md:text-3xl lg:text-4xl font-normal text-black leading-relaxed">
                 {feature.description}
-              </p>
+              </h4>
+              {feature.author && (
+                <p className="text-xl md:text-2xl text-black">
+                  {feature.author}
+                </p>
+              )}
               {feature.testimonial && (
-                <div className="mt-8 pl-6 md:pl-8 border-l-2 border-gray-300">
-                  <p className="text-lg md:text-xl italic text-gray-600 mb-3 font-light">
-                    "{feature.testimonial}"
-                  </p>
-                  <p className="text-sm md:text-base text-gray-500">
-                    {feature.author}
-                  </p>
-                </div>
+                <h4 className="text-2xl md:text-3xl lg:text-4xl font-normal text-black leading-relaxed mt-8">
+                  "{feature.testimonial}"
+                </h4>
               )}
             </div>
           ))}
@@ -54,4 +54,3 @@ export default function Features() {
     </section>
   );
 }
-
