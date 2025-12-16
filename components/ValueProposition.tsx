@@ -24,30 +24,15 @@ export default function ValueProposition() {
     return () => observer.disconnect();
   }, []);
 
-  const words = ["Concept.", "Brand.", "Build.", "Launch.", "Exit."];
-
   return (
-    <section className="py-20 md:py-32 px-8 md:px-12 lg:px-16 xl:px-24 relative">
-      <div className="max-w-6xl mx-auto">
-        <div ref={ref} className="opacity-0">
-          <h2 className="text-6xl md:text-8xl lg:text-9xl xl:text-[12rem] font-bold leading-[0.95] text-black tracking-[-0.02em]">
-            <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-default">
-              Concept.
-            </span>{" "}
-            <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-default">
-              Brand.
-            </span>{" "}
-            <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-default">
-              Build.
-            </span>{" "}
-            <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-default">
-              Launch.
-            </span>{" "}
-            <span className="inline-block hover:scale-105 transition-transform duration-300 cursor-default gradient-text">
-              Exit.
-            </span>
-          </h2>
-        </div>
+    <section className="py-24 md:py-32 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24">
+      <div className="max-w-5xl mx-auto">
+        <h2
+          ref={ref}
+          className="opacity-0 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-[1.05] text-black tracking-tight"
+        >
+          Concept. Brand. Build. Launch. Exit.
+        </h2>
       </div>
     </section>
   );
