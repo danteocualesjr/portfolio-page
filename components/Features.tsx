@@ -53,46 +53,41 @@ export default function Features() {
   }, []);
 
   return (
-    <section className="py-20 md:py-32 px-8 md:px-12 lg:px-16 xl:px-24 relative">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-24 md:py-32 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24">
+      <div className="max-w-5xl mx-auto">
         <h2
           ref={sectionRef}
-          className="text-6xl md:text-8xl lg:text-9xl xl:text-[12rem] font-bold leading-[0.95] text-black tracking-[-0.02em] mb-20 md:mb-32 opacity-0"
+          className="opacity-0 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-[1.05] text-black tracking-tight mb-20 md:mb-24"
         >
           Here's what you can expect from me...
         </h2>
-        <div className="space-y-12 md:space-y-16">
+        <div className="space-y-16 md:space-y-24">
           {features.map((feature, index) => (
             <div
               key={index}
               ref={(el) => {
                 if (el) featuresRef.current[index] = el;
               }}
-              className="group opacity-0 bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 lg:p-16 border border-black/5 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.08)] hover:border-black/10 transition-all duration-500 hover:-translate-y-1"
+              className="opacity-0 space-y-6"
             >
-              <div className="space-y-6 md:space-y-10">
-                <div className="flex items-center gap-4">
-                  <div className="h-1 w-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full group-hover:w-16 transition-all duration-300" />
-                  <h3 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-tight group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                    {feature.title}
-                  </h3>
-                </div>
-                <h4 className="text-2xl md:text-3xl lg:text-4xl font-normal text-black/90 leading-relaxed pl-16">
-                  {feature.description}
-                </h4>
-                {feature.author && (
-                  <p className="text-xl md:text-2xl text-black/70 font-medium pl-16">
-                    — {feature.author}
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
+                {feature.title}
+              </h3>
+              <p className="text-xl md:text-2xl lg:text-3xl text-neutral-700 leading-relaxed max-w-4xl">
+                {feature.description}
+              </p>
+              {feature.author && (
+                <p className="text-lg md:text-xl text-neutral-600">
+                  — {feature.author}
+                </p>
+              )}
+              {feature.testimonial && (
+                <div className="pt-6 border-t border-neutral-200">
+                  <p className="text-xl md:text-2xl lg:text-3xl text-neutral-600 leading-relaxed italic max-w-4xl">
+                    "{feature.testimonial}"
                   </p>
-                )}
-                {feature.testimonial && (
-                  <div className="mt-8 pl-16 border-l-4 border-gradient-to-b from-indigo-500 to-purple-500 border-l-indigo-500">
-                    <h4 className="text-2xl md:text-3xl lg:text-4xl font-normal text-black/80 leading-relaxed italic">
-                      "{feature.testimonial}"
-                    </h4>
-                  </div>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           ))}
         </div>

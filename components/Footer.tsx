@@ -10,7 +10,7 @@ export default function Footer() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in");
+            entry.target.classList.add("animate-fade-in-up");
           }
         });
       },
@@ -25,19 +25,19 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="py-16 md:py-24 px-8 md:px-12 lg:px-16 xl:px-24 border-t border-black/10 relative bg-white/40 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto">
+    <footer className="py-16 md:py-20 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 border-t border-neutral-200">
+      <div className="max-w-5xl mx-auto">
         <div ref={ref} className="opacity-0">
-          <p className="text-xl md:text-2xl text-black/80 mb-8 font-light">
+          <p className="text-lg md:text-xl text-neutral-600 mb-6">
             Looking forward to it,
           </p>
-          <p className="text-lg md:text-xl text-black mb-12 font-medium">
+          <p className="text-base md:text-lg text-neutral-900 mb-8 font-medium">
             © Your Name 👋
           </p>
-          <div className="flex flex-wrap gap-6 md:gap-8">
+          <div className="flex flex-wrap gap-6">
             <a
               href="mailto:your.email@example.com"
-              className="text-lg md:text-xl text-black/70 hover:text-black underline decoration-2 underline-offset-4 hover:decoration-indigo-500 hover:text-indigo-600 transition-all duration-300 font-medium"
+              className="text-base md:text-lg text-neutral-600 hover:text-black underline"
             >
               Email
             </a>
@@ -45,7 +45,7 @@ export default function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg md:text-xl text-black/70 hover:text-black underline decoration-2 underline-offset-4 hover:decoration-indigo-500 hover:text-indigo-600 transition-all duration-300 font-medium"
+              className="text-base md:text-lg text-neutral-600 hover:text-black underline"
             >
               LinkedIn
             </a>
@@ -53,7 +53,7 @@ export default function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg md:text-xl text-black/70 hover:text-black underline decoration-2 underline-offset-4 hover:decoration-purple-500 hover:text-purple-600 transition-all duration-300 font-medium"
+              className="text-base md:text-lg text-neutral-600 hover:text-black underline"
             >
               Instagram
             </a>
@@ -61,7 +61,7 @@ export default function Footer() {
               href="https://x.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg md:text-xl text-black/70 hover:text-black underline decoration-2 underline-offset-4 hover:decoration-pink-500 hover:text-pink-600 transition-all duration-300 font-medium"
+              className="text-base md:text-lg text-neutral-600 hover:text-black underline"
             >
               X
             </a>
