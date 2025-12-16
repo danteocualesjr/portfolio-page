@@ -23,26 +23,26 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-black mb-12">
+    <section className="py-16 md:py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-16 md:mb-20">
           Here's what you can expect from me...
         </h2>
-        <div className="space-y-16">
+        <div className="space-y-20 md:space-y-24">
           {features.map((feature, index) => (
-            <div key={index} className="border-b border-gray-200 pb-12 last:border-b-0">
-              <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
+            <div key={index}>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4 md:mb-6">
                 {feature.title}
               </h3>
-              <p className="text-lg md:text-xl text-gray-700 mb-4">
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-600 font-light mb-6">
                 {feature.description}
               </p>
               {feature.testimonial && (
-                <div className="mt-6 pl-6 border-l-2 border-gray-300">
-                  <p className="text-lg italic text-gray-600 mb-2">
+                <div className="mt-8 pl-6 md:pl-8 border-l-2 border-gray-300">
+                  <p className="text-lg md:text-xl italic text-gray-600 mb-3 font-light">
                     "{feature.testimonial}"
                   </p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm md:text-base text-gray-500">
                     {feature.author}
                   </p>
                 </div>
