@@ -8,8 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen text-black relative">
-      <div className="fixed inset-0 -z-10 bg-gradient-to-b from-white via-white to-[#fafafa] opacity-100" />
+    <main className="min-h-screen bg-white">
       <Hero />
       <Introduction />
       <ValueProposition />
